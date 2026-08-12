@@ -18,7 +18,26 @@
 
 ---
 
-## 🎯 About This Repository
+## 📚 Table of Contents
+
+- [🎯 About This Repository](#-about-this-repository)
+- [📊 Exam Domains](#-exam-domains)
+  - [Domain 1 — Networking Concepts (23%)](domains/01-networking-concepts/README.md)
+  - [Domain 2 — Network Implementation (20%)](domains/02-network-implementation/README.md)
+  - [Domain 3 — Network Operations (19%)](domains/03-network-operations/README.md)
+  - [Domain 4 — Network Security (14%)](domains/04-network-security/README.md)
+  - [Domain 5 — Network Troubleshooting (24%)](domains/05-network-troubleshooting/README.md)
+- [🗂️ Repository Structure](#%EF%B8%8F-repository-structure)
+- [🧭 Recommended Learning Path](#-recommended-learning-path)
+- [⚡ Quick Exam Reference](#-quick-exam-reference)
+- [🧪 Hands-On Labs](labs/README.md)
+- [⚡ Cheat Sheets](cheat-sheets/README.md)
+- [📚 Glossary](glossary/README.md)
+- [✅ Progress Tracker](#-progress-tracker)
+- [👨‍💻 Author](#-author)
+
+---
+
 
 This repository converts the **CompTIA Network+ N10-009 objectives** into clear, searchable and hands-on learning material. It is designed for learners preparing for the exam and for IT professionals strengthening real-world networking support skills.
 
@@ -155,7 +174,7 @@ Content is provided for **personal and educational use**. Review [Resources and 
 
 ### **Xuan Toan Nguyen**
 
-*Systems Administrator • Remote Desktop Support L2 • Cloud & Infrastructure Enthusiast*
+*Systems Administrator | IT Support L2 (Work Placement) @ DXC Technology | Cloud & Infrastructure*
 
 📍 Adelaide, South Australia  
 🏅 Microsoft Certified: Azure Fundamentals  

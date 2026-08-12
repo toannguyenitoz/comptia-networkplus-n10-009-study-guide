@@ -65,7 +65,45 @@
 
 ---
 
-## 🔀 Switching Quick Reference
+## 📐 Subnetting Quick Reference (CIDR)
+
+| CIDR | Subnet Mask | Hosts | Usable Hosts | Notes |
+| :---: | :--- | ---: | ---: | :--- |
+| `/30` | 255.255.255.252 | 4 | **2** | Point-to-point links |
+| `/29` | 255.255.255.248 | 8 | **6** | Small segments |
+| `/28` | 255.255.255.240 | 16 | **14** | Small office VLAN |
+| `/27` | 255.255.255.224 | 32 | **30** | Medium VLAN |
+| `/26` | 255.255.255.192 | 64 | **62** | Medium subnet |
+| `/25` | 255.255.255.128 | 128 | **126** | Half class C |
+| `/24` | 255.255.255.0 | 256 | **254** | Standard class C |
+| `/23` | 255.255.254.0 | 512 | **510** | Merged class C pair |
+| `/22` | 255.255.252.0 | 1,024 | **1,022** | Campus VLAN |
+| `/16` | 255.255.0.0 | 65,536 | **65,534** | Class B range |
+| `/8` | 255.0.0.0 | 16,777,216 | **16,777,214** | Class A range |
+
+### 🧮 Subnetting Formula
+
+```text
+Usable hosts  = 2ⁿ − 2     (n = host bits)
+Subnets       = 2ˢ          (s = borrowed bits)
+Block size    = 256 − last octet of subnet mask
+```
+
+### 🔢 Powers of 2 — Memorise These
+
+| 2ⁿ | Value | Use |
+| :---: | ---: | :--- |
+| 2¹ | 2 | /31 point-to-point |
+| 2² | 4 | /30 |
+| 2³ | 8 | /29 |
+| 2⁴ | 16 | /28 |
+| 2⁵ | 32 | /27 |
+| 2⁶ | 64 | /26 |
+| 2⁷ | 128 | /25 |
+| 2⁸ | 256 | /24 |
+
+> 🧠 **Exam tip:** `Usable hosts = 2ⁿ − 2`. For a `/28`: 32 − 28 = 4 host bits → 2⁴ − 2 = **14 usable hosts**.
+
 
 - **Access port:** one VLAN
 - **Trunk port:** multiple VLANs with 802.1Q
